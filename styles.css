@@ -1,0 +1,280 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #000782;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f3e5f5;
+}
+
+.login-btn button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #000782;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn button:hover {
+    background-color: #f3e5f5;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000782;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+.login-btn button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #000782;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn button:hover {
+    background-color: #f3e5f5;
+}
+
+/* Section intro */
+.intro {
+    height: 90vh;
+    background: linear-gradient(to bottom, #000782 85%, white 15%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.intro-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+}
+
+.intro-content p {
+    font-size: 1.6em;
+    margin-bottom: 25px;
+}
+
+.intro-content button {
+    padding: 15px 30px;
+    background-color: white;
+    color: #000782;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.intro-content button:hover {
+    background-color: #f3e5f5;
+    transform: scale(1.1);
+}
+
+/* Sobre a Empresa */
+.sobre-empresa {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f3e5f5;
+    color: #000782;
+}
+
+.sobre-empresa h2 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+}
+
+.sobre-empresa p {
+    font-size: 1.1em;
+    line-height: 1.8;
+}
+
+/* As problematicas */
+.problematica_borracha{
+    background-image: url("https://i0.wp.com/unicaprecapagem.com.br/wp-content/uploads/2023/05/imagem_2023-05-17_090212974.webp?resize=425%2C284&ssl=1");
+    height: 350px;
+    background-size: cover; 
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.problematica_borracha h2 {
+    font-size: 2.5em;
+    color: #000782;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.problematica_borracha p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.problematica_plastico{
+    height: 350px;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4AWXXf1_MlIwptEheflFQQVKIuO5-jL_lEQ&s");
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.problematica_plastico h2 {
+    font-size: 2.5em;
+    color: #000782;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.problematica_plastico p {
+    color: white;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #000782;
+    color: white;
+}
+
+.call-to-action h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+}
+
+.call-to-action button {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: white;
+    color: #000782;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.call-to-action button:hover {
+    background-color: #f3e5f5;
+    color: #000782;
+}
+
+/* Footer */
+footer {
+    background-color: #000782;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 0px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
